@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0">
+        <div class="container-fluid p-3">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/QA.png" alt="Bootstrap" width="60" height="60">
+            </a>
+        </div>
+    </nav>
+
+    <form class="form">
+        <div class="form-content">
+            <p class="login-h">Login</p>
+            <img src="Assets/Logo.png" class="logo-image rounded mx-auto d-block" alt="...">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="Name" placeholder="Name">
+                <label for="Name">Name</label>
+            </div>
+            <div class="button">
+                <button type="button" class="start-button mb-5" onclick="login()">Start</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
