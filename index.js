@@ -13,6 +13,14 @@ function login() {
   document.getElementById("span-name").textContent = name;
 }
 
+window.onload = function () {
+  const name = localStorage.getItem("userName");
+  document.getElementById("span-name").textContent = name;
+  document.getElementById("span-name").style.color='white';
+  loadQuestion();
+};
+
+
 const quizData = [
   {
     question: "1. What does HTML stand for?",
@@ -45,9 +53,9 @@ const quizData = [
     correct: 0,
   },
   {
-    question: "5. Which company developed JavaScript?",
-    options: ["Microsoft", "Sun Microsystems", "Netscape", "Oracle"],
-    correct: 2,
+    question: "5. Which property is used to change the text color in CSS?",
+    options: ["font-color", "color", "text-color", "foreground"],
+    correct: 1,
   },
 ];
 
@@ -56,12 +64,6 @@ let score = 0;
 let timer=null;
 let timerRunning = false;
 
-window.onload = function () {
-  const name = localStorage.getItem("userName");
-  document.getElementById("span-name").textContent = name;
-  document.getElementById("span-name").style.color='white';
-  loadQuestion();
-};
 
 function loadQuestion() {
   const q = quizData[currentQuestion];
