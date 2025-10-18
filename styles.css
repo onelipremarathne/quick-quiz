@@ -65,6 +65,9 @@
    margin-top: -40px !important;
     width: 60% !important;
   }
+    .bg-picture{
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -77,14 +80,20 @@
   .btn-success {
   width: 20% !important;
 }
+  .bg-picture{
+    object-fit: cover;
+  }
 
 }
 @media only screen and (max-width: 500px) {
   .navbar-brand img {
-    margin-left: -40px !important;
+    margin-left: -20px !important;
   }
   .form {
     scale: 0.7;
+  }
+  .bg-picture{
+    object-fit: cover;
   }
 }
 
